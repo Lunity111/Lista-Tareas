@@ -1,0 +1,154 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('https://i.pinimg.com/originals/dd/8c/50/dd8c50f82fb8c4d1f27838fbdd9903ca.gif');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    /* Efecto parallax para el fondo */
+    background-attachment: fixed;
+}
+
+/* Animación de difuminado en la sección al cargar */
+#section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s ease-out forwards;
+    background: linear-gradient(135deg, #6a0dad, #b19cd9);
+    border-radius: 16px;
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Input y botón */
+input[type="text"] {
+    width: 70%;
+    padding: 0.5rem;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    margin-right: 0.5rem;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #9d4edd;
+}
+
+button {
+    background: linear-gradient(135deg, #9d4edd, #c084fc);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #c084fc, #9d4edd);
+    transform: scale(1.05);
+}
+
+button:disabled {
+    background-color: #d1d5db;
+    cursor: not-allowed;
+}
+
+/* Progreso */
+.progress {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+
+/* Lista de tareas */
+ul {
+    list-style-type: none;
+    margin-top: 1rem;
+    padding-left: 0;
+}
+
+li {
+    background: linear-gradient(135deg, #9d4edd, #6a0dad);
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    padding: 0.7rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+li:hover {
+    background: linear-gradient(135deg, #b19cd9, #9d4edd);
+}
+
+.linetr {
+    text-decoration: line-through;
+    color: #d1d5db;
+}
+
+/* Contador de tareas completadas */
+h3 {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #d1d5db;
+    text-align: center;
+}
+
+/* Estilos adicionales para botones de incrementar y decrementar */
+article > button {
+    margin: 0 5px;
+    background: linear-gradient(135deg, #b19cd9, #6a0dad);
+}
+
+article > button:hover {
+    background: linear-gradient(135deg, #6a0dad, #9d4edd);
+}
+
+
+.verdex{
+    background-color: rgb(97, 248, 190);
+}
+
+.rojox{
+    background-color: rgb(252, 137, 198);
+    
+}
+
+.amarillox{
+    background-color: rgb(253, 211, 148);
+}
+
+.linetr{
+    text-decoration: line-through;
+}
